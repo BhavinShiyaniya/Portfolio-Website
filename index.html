@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Bhavin - Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -45,7 +45,8 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Bhavin Shiyaniya</h1>
-            <p class="section__text__p2">Web Developer</p>
+            <!-- <p class="section__text__p2">Web Developer</p> -->
+            <p class="section__text__p2"><span id="element"></span></p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/Bhavin_CV.pdf')">
                     Download CV
@@ -81,14 +82,13 @@
                     <div class="details-container">
                         <img src="./assets/education.png" alt="Education icon" class="icon" />
                         <h3>Education</h3>
-                        <p>B.E. Information Technology <br />Web Development</p>
+                        <p>B.E. <br /> Information Technology</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A at aut dignissimos minus laboriosam
-                        praesentium quaerat reiciendis eveniet quos, atque, commodi hic porro perspiciatis molestias
-                        dicta! Molestias ipsam iste at cupiditate neque vitae aut assumenda voluptatibus libero, ex nemo
-                        eligendi facilis illo, dolore quibusdam quae perspiciatis aperiam illum nam quas.</p>
+                    <p>Hello! My name is Bhavin Shiyaniya, and I am a web developer with one year of experience. My primary focus is on Python Django web development. I have honed my skills in building robust and efficient web applications using this powerful framework.</p><br />
+                    <p>Throughout my journey, I have gained hands-on experience in developing dynamic websites and web applications that meet the unique requirements of clients. I have worked on various projects, ranging from e-commerce platforms to project management systems, always striving to deliver high-quality and user-friendly solutions.
+                    </p>
                 </div>
             </div>
         </div>
@@ -296,6 +296,13 @@
         <p>Copyright &#169; 2023 Bhavin Shiyaniya. All Rights Reserved.</p>
     </footer>
     <script src="scripts.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Python Developer', 'Android Developer'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
 
 </html>
